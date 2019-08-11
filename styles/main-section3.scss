@@ -1,0 +1,85 @@
+@import "./mixins.scss";
+
+$main-section-bg-color: #fafafa;
+
+.section3 {
+  &__content3 {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 600px;
+    @include mobile {
+      flex-direction: column;
+      min-height: 500px;
+    }
+  }
+  &_main3 {
+    background-color: $main-section-bg-color;
+  }
+  &__image3 {
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    bottom: 0;
+    width: 40%;
+    left: 50%;
+    @include mobile {
+      width: 80%;
+    }
+
+    &_apple-watch {
+      background-image: url(./Images/apple_watch_series_4_4aeff_large_2x.jpg);
+      background-position: center;
+      min-height: 600px;
+      @include mobile {
+        background-image: url(./Images/apple_watch_series_4_4aeff_small_2x.jpg);
+        min-height: 250px;
+        background-position: top;
+        margin-top: 40px;
+      }
+    }
+  }
+  &__text-block3 {
+    min-width: 400px;
+    @include mobile {
+      margin-top: 20px;
+    }
+  }
+}
+
+.text-block3 {
+  text-align: center;
+  &_dark3 {
+    color: rgb(0, 0, 0);
+  }
+  &__header3 {
+    font-size: 50px;
+    &_text-red {
+      color: rgb(173, 77, 77);
+      font-size: 20px;
+    }
+    @include mobile {
+      font-size: 30px;
+    }
+  }
+  &__description3 {
+    margin: 10px 0;
+    font-size: 30px;
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+  &__link3 {
+    margin: 10px;
+    font-size: 25px;
+    text-decoration: none;
+    color: #6bf;
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+}

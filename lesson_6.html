@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./lesson_6.css" type="text/css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="global-nav global-nav_expand">
+      <div class="global-nav__controls">
+        <div class="global-nav__control">
+          <button class="global-nav__burger burger">
+            <div class="burger__row"></div>
+            <div class="burger__row"></div>
+          </button>
+        </div>
+        <img src="./Images/apple_image.svg" alt="" />
+        <img src="./Images/cart_image.svg" alt="" />
+      </div>
+      <ul class="global-nav__menu">
+        <li class="global-nav__item mobile-hidden">
+          <a href="" class="global-nav__link"
+            ><img src="./Images/apple_image.svg" alt=""
+          /></a>
+        </li>
+        <li class="global-nav__item">
+          <a href="" class="global-nav__link">Mac</a>
+        </li>
+        <li class="global-nav__item">
+          <a href="" class="global-nav__link">iPhone</a>
+        </li>
+        <li class="global-nav__item">
+          <a href="" class="global-nav__link">iPad</a>
+        </li>
+        <li class="global-nav__item">
+          <a href="" class="global-nav__link">Watch</a>
+        </li>
+        <li class="global-nav__item">
+          <a href="" class="global-nav__link">iOs</a>
+        </li>
+        <li class="global-nav__item">
+          <a href="" class="global-nav__link">iTunes</a>
+        </li>
+        <li class="global-nav__item mobile-hidden">
+          <a href="" class="global-nav__link"
+            ><img src="./Images/cart_image.svg" alt=""
+          /></a>
+        </li>
+      </ul>
+    </nav>
+    <section class="section section_main">
+      <div class="section__content">
+        <div class="section__text-block text-block text-block_dark">
+          <h1 class="text-block__header">iPhone Xs</h1>
+          <div class="text-block__description">Welcome to big screen</div>
+          <div class="text-block__links">
+            <a href="" class="text-block__link">Learn more > </a>
+            <a href="" class="text-block__link">Buy > </a>
+          </div>
+        </div>
+        <figure class="section__image section__image_iphone-xs"></figure>
+      </div>
+    </section>
+    <section class="section section_main section2">
+      <div class="section__content">
+        <div class="section__text-block text-block text-block_dark">
+          <h1 class="text-block__header">iPhone Xr</h1>
+          <div class="text-block__description">Brilliant. In every way</div>
+          <div class="text-block__links">
+            <a href="" class="text-block__link">Learn more > </a>
+            <a href="" class="text-block__link">Buy > </a>
+          </div>
+        </div>
+        <figure class="section__image section__image_iphone-xr"></figure>
+      </div>
+    </section>
+    <section class="section3 section3_main3">
+      <div class="section3__content3">
+        <div class="section3__text-block3 text-block3 text-block3_dark3">
+          <h1 class="text-block3__header3">WATCH</h1>
+          <h3 class="text-block3__header3_text-red">SERIES 4</h3>
+          <div class="text-block3__description3">All new. For a better you</div>
+          <div class="text-block3__links3">
+            <a href="" class="text-block3__link3">Learn more > </a>
+            <a href="" class="text-block3__link3">Buy > </a>
+          </div>
+        </div>
+        <figure class="section3__image3 section3__image3_apple-watch"></figure>
+      </div>
+    </section>
+    <section class="section4 section4_main4">
+      <div class="section4_block">
+        <div class="section4__content4">
+          <div class="section4__text-block4 text-block4 text-block4_dark4">
+            <h1 class="text-block4__header4">iPad Pro</h1>
+            <div class="text-block4__description4">
+              All new. All screen. All powerful
+            </div>
+            <div class="text-block4__links4">
+              <a href="" class="text-block4__link4">Learn more > </a>
+              <a href="" class="text-block4__link4">Buy > </a>
+            </div>
+          </div>
+          <figure class="section4__image4 section4__image4_iPad"></figure>
+        </div>
+        <div class="section4__content4">
+          <div class="section4__text-block4 text-block4 text-block4_dark4">
+            <h1 class="text-block4__header4">iPad Pro</h1>
+            <div class="text-block4__description4">
+              All new. All screen. All powerful
+            </div>
+            <div class="text-block4__links4">
+              <a href="" class="text-block4__link4">Learn more > </a>
+              <a href="" class="text-block4__link4">Buy > </a>
+            </div>
+          </div>
+          <figure class="section4__image4 section4__image4_MacBook"></figure>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script>
+    const burger = document.querySelector(".burger");
+    const globalNav = document.querySelector(".global-nav");
+
+    burger.addEventListener("click", () => {
+      globalNav.classList.toggle("global-nav_expand");
+    });
+  </script>
+</html>

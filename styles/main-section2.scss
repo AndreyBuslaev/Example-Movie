@@ -1,0 +1,15 @@
+@import "./mixins.scss";
+
+.section2 {
+  margin-top: 20px;
+}
+
+.section__image_iphone-xr {
+  background-image: url(./Images/iphone_xr_5e40f_large.jpg);
+  background-position: bottom;
+  min-height: 300px;
+  @include mobile {
+    background-image: url(./Images/iphone_xr_5e40f_small_2x.jpg);
+    height: 350px;
+  }
+}

@@ -1,0 +1,89 @@
+@import "./mixins.scss";
+
+$main-section-bg-color: #fafafa;
+
+.section4 {
+  display: flex;
+  justify-content: center;
+  &_block {
+    max-width: 1200px;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+  &__content4 {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 600px;
+    @include mobile {
+      flex-direction: column;
+      min-height: 500px;
+    }
+  }
+  &_main4 {
+    background-color: $main-section-bg-color;
+  }
+  &__image4 {
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    bottom: 0;
+    width: 80%;
+    left: 50%;
+    margin-top: 20px;
+    &_iPad {
+      background-image: url(./Images/ipad_pro__7b6504bb31_medium_2x.jpg);
+      background-position: top;
+      min-height: 400px;
+    }
+    &_MacBook {
+      background-image: url(./Images/macbook_air__2f52481d_medium_2x.jpg);
+      background-position: top;
+      min-height: 400px;
+    }
+  }
+  &__text-block4 {
+    min-width: 400px;
+    @include mobile {
+      margin-top: 40px;
+    }
+  }
+}
+
+.text-block4 {
+  text-align: center;
+  &_dark4 {
+    color: rgb(0, 0, 0);
+  }
+  &__header4 {
+    font-size: 50px;
+    @include mobile {
+      font-size: 30px;
+    }
+  }
+  &__description4 {
+    margin: 10px 0;
+    font-size: 30px;
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+  &__link4 {
+    margin: 10px;
+    font-size: 25px;
+    text-decoration: none;
+    color: #6bf;
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+}
